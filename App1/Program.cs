@@ -72,6 +72,10 @@ using System.Formats.Asn1;
         else
             race = new SprintRace(vehicles, raceService);
         Console.WriteLine(race.StartRace().ToString());
+        vehicles[0].IncraseTopSpeed(10);
+        Console.WriteLine("Race started again, but this time 1st veichle has 10 km/h higher topspeed");
+        Console.WriteLine(race.StartRace().ToString());
+
         
 
 
